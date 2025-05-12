@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="fixed bottom-0 w-full bg-neutral-500 pt-7 pb-10">
+    <footer className="bottom-0 w-full bg-neutral-500 pt-7 pb-10">
       <div className="flex items-start justify-center text-white text-sm px-70 gap-32">
         <div className="flex flex-col gap-3">
           <p className="text-lg">About CashKaro</p>

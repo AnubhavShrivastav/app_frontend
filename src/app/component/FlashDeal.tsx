@@ -5,7 +5,7 @@ function FlashDeal() {
      
      
      <div className="">
-
+      
      </div>
 
     </div>

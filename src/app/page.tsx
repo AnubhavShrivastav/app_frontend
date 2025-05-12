@@ -1,9 +1,9 @@
-import FlashDeal from "./component/FlashDeal";
+import HomePage from './Pages/HomePage'
 
 export default function Home() {
   return (
     <>
-   <FlashDeal />
+    <HomePage />
     </>
   );
 }

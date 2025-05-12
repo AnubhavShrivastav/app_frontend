@@ -1,7 +1,7 @@
 
 function Header() {
   return (
-    <header className="w-full bg-white shadow-md fixed top-0 left-0 z-50">
+    <header className="w-full bg-white shadow-md  top-0 left-0 z-50">
       <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-14 flex justify-between items-center h-20">
         <div className="flex items-center space-x-4 cursor-pointer">
           
