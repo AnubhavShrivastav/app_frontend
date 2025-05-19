@@ -24,7 +24,7 @@ function Slider() {
     setCurrent((prev) => (prev - 1 + images.length) % images.length);
 
   return (
-    <div className="relative mx-72 my-8 overflow-hidden rounded-lg shadow-lg bg-white">
+    <div className="relative  mx-72 my-8 overflow-hidden rounded-lg shadow-lg bg-white">
       <div className="flex justify-center items-center p-4 mx-2 my-2">
         <img
           src={images[current]}

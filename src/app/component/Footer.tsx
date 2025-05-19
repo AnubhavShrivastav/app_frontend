@@ -31,7 +31,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="mt-8 pl-80">
+      <div className="mt-8 pl-76">
         <p className="text-white">Let’s Get Social</p>
 
         <a href="">

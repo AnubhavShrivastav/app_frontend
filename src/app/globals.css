@@ -24,3 +24,10 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Change default Slick arrow color */
+.slick-prev:before,
+.slick-next:before {
+  color: black !important;  /* change 'black' to any color you want */
+  font-size: 100px;           /* make it a little bigger if needed */
+}
