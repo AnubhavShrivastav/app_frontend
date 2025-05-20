@@ -6,7 +6,6 @@ import "slick-carousel/slick/slick-theme.css";
 
 const Banner: string[] = [
   "https://asset22.ckassets.com/resources/image/staticpage_images/Beauty%20Products%201-1745564957.png",
-  "https://asset22.ckassets.com/resources/image/staticpage_images/Beauty%20Products%201-1745564957.png",
   "https://asset22.ckassets.com/resources/image/staticpage_images/Personal%20Care-1738069570.png",
   "https://asset22.ckassets.com/resources/image/staticpage_images/Footwear-1738069495.png",
   "https://asset22.ckassets.com/resources/image/staticpage_images/Watches-1738069623.png",
