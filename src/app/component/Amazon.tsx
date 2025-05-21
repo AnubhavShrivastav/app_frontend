@@ -46,7 +46,7 @@ function Amazon() {
                 width={100}
                 alt={`Slide ${index}`}
               />
-              <button className="absolute cursor-pointer inline bottom-[6%] left-[65%] rounded-lg px-3 py-1 bg-white text-blue-700 font-semibold text-lg">
+              <button className="absolute cursor-pointer inline bottom-[6%] left-[70%] rounded-lg px-3 py-1 bg-white text-blue-700 font-semibold text-lg">
                 Grab Deal
               </button>
             </div>
