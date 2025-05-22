@@ -1,6 +1,6 @@
 import Header from "../component/Header";
 import Footer from "../component/Footer";
-import BannerSlider  from "../component/catagarySlider";
+import BannerSlider  from "../component/BannerSlider";
 import ProductSlider from "../component/ProductSlider";
 import FlashDeal from "../component/FlashDeal";
 import Ajio from "../component/Ajio";

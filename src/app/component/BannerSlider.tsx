@@ -1,6 +1,7 @@
 "use client";
-
-import { useState } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const images: string[] = [
   "https://asset22.ckassets.com/resources/image/staticpage_images/Desktop%20Banner-1746783373.png",
@@ -14,40 +15,39 @@ const images: string[] = [
   "https://asset22.ckassets.com/resources/image/staticpage_images/Desktop%20Banner-1746851354.png",
   "https://asset22.ckassets.com/resources/image/staticpage_images/Desktop%20Banner-1746938100.png",
   "https://asset22.ckassets.com/resources/image/staticpage_images/M-site%20Banner-1747037559.png",
+  "https://asset22.ckassets.com/resources/image/staticpage_images/Desktop%20Banner-1747715287.png",
+  "https://asset22.ckassets.com/resources/image/staticpage_images/Desktop%20Banner-1747740557.png",
 ];
 
-function Slider() {
-  const [current, setCurrent] = useState<number>(0);
 
-  const nextSlide = () => setCurrent((prev) => (prev + 1) % images.length);
-  const prevSlide = () =>
-    setCurrent((prev) => (prev - 1 + images.length) % images.length);
+function BannerSlider() {
+  const Setting = {
+    dots: false, // Shows navigation dots
+    infinite: false, // Looping
+    speed: 500, // Animation speed
+    slidesToShow: 3.2, // Show 3 at once
+    slidesToScroll: 2, // Move one at a time
+    autoplay: false, // Auto-slide
+    autoplaySpeed: 3000, // 3 seconds
+    arrows: true, // Left/Right arrows
+  };
 
   return (
-    <div className="relative  mx-72 my-8 overflow-hidden rounded-lg shadow-lg bg-white">
-      <div className="flex justify-center items-center p-4 mx-2 my-2">
-        <img
-          src={images[current]}
-          alt={`Slide ${current + 1}`}
-          className="object-cover h-85 w-200 rounded-md"
-        />
-
-        <button
-          onClick={prevSlide}
-          className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white text-black p-2 rounded-full shadow hover:bg-gray-200"
-        >
-          ◀
-        </button>
-
-        <button
-          onClick={nextSlide}
-          className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white text-black p-2 rounded-full shadow hover:bg-gray-200"
-        >
-          ▶
-        </button>
-      </div>
+    <div className="min-w-[200px] mx-10 mt-30">
+      <Slider {...Setting}>
+        {images.map((banner, index) => (
+          <div className="px-2">
+            <img
+              src={banner}
+              key={index}
+              className="w-[534px] h-[248px] rounded-xl"
+              alt=""
+            />
+          </div>
+        ))}
+      </Slider>
     </div>
   );
 }
 
-export default Slider;
+export default BannerSlider;

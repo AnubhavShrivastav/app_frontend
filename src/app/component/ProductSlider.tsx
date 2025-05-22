@@ -1,4 +1,7 @@
 "use client";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const images: string[] = [
   "https://asset20.ckassets.com/resources/image/category/banking-finance-offers-4684-17455848681.png",
@@ -19,15 +22,58 @@ const images: string[] = [
   "https://asset20.ckassets.com/resources/image/category/education-offers-4445-17352857240.png",
 ];
 
-function ProductSlider() {
-  return (
-    <div className="mx-3 my-12">
-      <h1 className="text-xl font-semibold">Top Categories</h1>
+const ProductName: string[] = [
+  "Credit Cards",
+  "Biggest Sales",
+  "Loans",
+  "Fashion",
+  "Pharmancy",
+  "Mobile",
+  "Electronics",
+  "New on CashKaro",
+  "Beauty & Grooming",
+  "Health & Wellness",
+  "Food & Grocery",
+  "Departmental",
+  "Flight & Hotels",
+  "Home $ Kitchen",
+  "Hosting",
+  "Education",
+];
 
-      <div className="flex items-center my-10 w-[110px] h-[110px] cursor-pointer">
-        {images.map((img, index) => (
-          <img src={img} key={index} className="mx-6 hover:scale-110" />
-        ))}
+
+function ProductSlider() {
+  const settings = {
+    dots: false,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 8.2,
+    slidesToScroll: 3,
+    autoplay: false,
+    autoplaySpeed: 3000,
+    arrows: true,
+  };
+
+  return (
+    <div className="min-w-[200px] mx-10 my-3">
+      <h1 className="text-2xl font-bold py-6 mb-2">Top Categories</h1>
+
+      <div className="">
+        <Slider {...settings}>
+          {images.map((item, index) => (
+            <div className="px-1 mb-6">
+              <img
+                src={item}
+                key={index}
+                className="mx-1 hover:scale-105"
+                height={125}
+                width={135}
+              />
+              
+            </div>
+            
+          ))}
+        </Slider>
       </div>
     </div>
   );
