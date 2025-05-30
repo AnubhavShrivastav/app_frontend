@@ -1,32 +1,40 @@
 function Header() {
   return (
-    <header className="fixed w-full bg-white shadow-md  top-0 left-0 z-50">
+    <header className="fixed w-full bg-white shadow-md top-0 left-0 z-50">
       <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-14 flex justify-between items-center h-20">
-        <div className="flex items-center space-x-4 cursor-pointer">
-          <img src="Images/menu.svg" alt="menu" />
-          <img src="Images/CashKaro.svg" alt="logo" className="w-auto" />
+        <div className="flex items-center md:space-x-4 cursor-pointer">
+          <img src="Images/menu.svg" alt="menu" className="mr-2 w-6 md:mr-5" />
+          <img
+            src="Images/CashKaro.svg"
+            alt="logo"
+            className="w-20 sm:w-auto"
+          />
         </div>
 
-        <div className="hidden md:flex flex-grow justify-center left-10 mx-10">
+        <div className="md:flex flex-grow justify-center md:left-10 md:mx-10">
           <input
             type="text"
-            className="w-xl h-12 rounded-xl outline-none px-4 bg-gray-100"
+            className="w-44 h-10 p-4 ml-2 rounded-xl outline-none sm:ml-4 sm:w-xs md:w-xl md:h-12 md:px-4 bg-gray-100"
             placeholder="Search for any brand or products"
           />
         </div>
 
-        <div className="hidden md:flex items-center">
-          <p className="font-medium mr-3 cursor-pointer">Help</p>
+        <div className="flex items-center">
+          <p className="text-xs m-1 font-medium md:text-base md:mr-3 cursor-pointer">
+            Help
+          </p>
 
-          <div className="h-6 w-px bg-gray-300 mr-3" />
+          <div className="h-6 w-px bg-gray-300 md:mr-3" />
           <img
             src="Images/login.png"
             alt="login"
             height={31}
             width={32}
-            className="cursor-pointer font-medium"
+            className=" m-1 cursor-pointer inline"
           />
-          <p className="font-medium ml-1 cursor-pointer">Login / Sign up</p>
+          <p className="text-xs font-medium md:text-base sm:ml-1 cursor-pointer">
+            Login / Sign up
+          </p>
         </div>
       </div>
     </header>

@@ -17,6 +17,8 @@ const images: string[] = [
   "https://asset22.ckassets.com/resources/image/staticpage_images/M-site%20Banner-1747037559.png",
   "https://asset22.ckassets.com/resources/image/staticpage_images/Desktop%20Banner-1747715287.png",
   "https://asset22.ckassets.com/resources/image/staticpage_images/Desktop%20Banner-1747740557.png",
+  "https://asset22.ckassets.com/resources/image/staticpage_images/Desktop%20Banner-1748264779.png",
+  "https://asset22.ckassets.com/resources/image/staticpage_images/Desktop%20Banner-1748359393.png"
 ];
 
 

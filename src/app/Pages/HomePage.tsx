@@ -7,6 +7,7 @@ import Ajio from "../component/Ajio";
 import Flipcart from "../component/Flipcart";
 import Amazon from "../component/Amazon";
 import Myntra from "../component/Myntra";
+import MCaffeine from "../component/mCaffeine";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -22,6 +23,7 @@ function HomePage() {
       <Flipcart />
       <Amazon />
       <Myntra />
+      <MCaffeine />
       <Footer />
     </>
   );
